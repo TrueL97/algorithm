@@ -5,6 +5,7 @@
 //     }
 
 const { Interface } = require("readline");
+const fs = require("fs");
 
 //     run(speed) {
 //         this.speed += speed;
@@ -33,21 +34,33 @@ const { Interface } = require("readline");
 // rabbit.run(5); // 흰 토끼 은/는 속도 5로 달립니다.
 // rabbit.stop(); // 흰 토끼 이/가 멈췄습니다. 흰 토끼 이/가 숨었습니다!
 
-class Car {
-    constructor(speed) {
-        this.speed = speed;
-        console.log("차" + speed);
-    }
-    con() {
-        console.log("부모차" + speed);
-    }
-}
+// class Car {
+//     constructor(speed) {
+//         this.speed = speed;
+//         console.log("차" + speed);
+//     }
+//     con() {
+//         console.log("부모차" + speed);
+//     }
+// }
 
-class BMW extends Car {
-    con() {
-        console.log(this.speed);
-        console.log("자식차");
-    }
-}
-let bmw = new BMW(10);
-bmw.con();
+// class BMW extends Car {
+//     con() {
+//         console.log(this.speed);
+//         console.log("자식차");
+//     }
+// }
+// let bmw = new BMW(10);
+// bmw.con();
+
+// const input = fs.readFileSync("/dev/stdin").toString().trim().split(" "); //한줄 입력
+// let a = input[0];
+// console.log(a);
+
+// const input1 = fs.readFileSync("/dev/stdin").toString().trim().split("\n"); //여러줄 입력
+// function numberToString1(n) {
+//     return (n + "").split("");
+// }
+
+// let j = numberToString1(151);
+// console.log(j);
