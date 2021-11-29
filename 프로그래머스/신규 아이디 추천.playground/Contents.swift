@@ -7,12 +7,17 @@ func solution(_ new_id:String) -> String {
     myID = myID.lowercased()
 
     //2차 소문자 숫자 - _ . 을 제외한 문자 제거
-    var newID: String = ""
-    for i in myID {
-        if i.isLetter || i.isNumber || i == "-" || i == "_" || i == "." {
-            newID.append(i)
-        }
-    }
+ //   var newID: String = ""
+//    for i in myID { //isLetter: 이문자가 문자인지 여부를 나타내는 Bool값
+//        if i.isLetter || i.isNumber || i == "-" || i == "_" || i == "." {
+//            newID.append(i)
+//            print(i)
+//        }
+//    }
+    let specialCharaters = ["-","_","."]
+    var newID = myID.filter{$0.isLetter || $0.isNumber || specialCharaters.contains(String($0))}
+    print("cc" + newID)
+    
 
     //3차 .이 두번이상 연속된 부분을 하나의 마침표로 치환
     while newID.contains("..") {
