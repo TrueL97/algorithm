@@ -14,8 +14,8 @@ import Foundation
 //}else{
 //    print("==")
 //}
-
-
+//
+//
 ////9498
 //let input = Int(readLine()!)! //언래핑 사용하는이유, nil이나 숫자가 아닌게 들어있을 수 있기 때문, 반드시 int여야한다
 //if input >= 90 {
@@ -29,7 +29,7 @@ import Foundation
 //} else {
 //    print("F")
 //}
-
+//
 //2753
 //let input = Int(readLine()!)!
 //
@@ -43,7 +43,7 @@ import Foundation
 //} else{
 //    print("0")
 //}
-
+//
 //14681
 //let input1 = readLine()!
 //let input2 = readLine()!
@@ -62,7 +62,7 @@ import Foundation
 //if a > 0 && b < 0 {
 //    print("4")
 //}
-
+//
 //2884
 //let input = readLine()!
 //let intputArr = input.split(separator: " ")
