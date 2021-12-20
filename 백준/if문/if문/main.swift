@@ -64,7 +64,7 @@ import Foundation
 //}
 //
 //2884
-//let input = readLine()!
+//let  input = readLine()!
 //let intputArr = input.split(separator: " ")
 //let a = Int(intputArr[0])!
 //let b = Int(intputArr[1])!
