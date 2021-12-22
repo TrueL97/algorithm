@@ -1,9 +1,8 @@
 //
 //  main.swift
-//  기본 수학 1
+//  기본수학2
 //
 //  Created by 이윤식 on 2021/12/22.
-//
 //
 
 import Foundation
