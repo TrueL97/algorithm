@@ -29,6 +29,7 @@ import Foundation
 //    var b = Int(arr[1])!
 //    print(a+b)
 //}
+//
 
 //1110
 var a = Int(readLine()!)!
