@@ -81,24 +81,35 @@ import Foundation
 //print(sum/Float(arr.count))
 
 //8958
-var input = Int(readLine()!)!
+//var input = Int(readLine()!)!
+//for i in 1...input {
+//    var input1 = readLine()!
+//    var arr:[Character] = []
+//    var right = 0
+//    var sum = 0
+//    for i in input1 {
+//        arr.append(i)
+//    }
+//    for i in 0...arr.count - 1{
+//        if arr[i] == "O" {
+//            right = right + 1
+//            sum = sum + right
+//        }else {
+//            right = 0
+//        }
+//    }
+//    print(sum)
+//}
+//
+//4344
+let input = Int(readLine()!)!
+
 for i in 1...input {
-    var input1 = readLine()!
-    var arr:[Character] = []
-    var right = 0
-    var sum = 0
-    for i in input1 {
-        arr.append(i)
-    }
-    for i in 0...arr.count - 1{
-        if arr[i] == "O" {
-            right = right + 1
-            sum = sum + right
-        }else {
-            right = 0
-        }
-    }
-    print(sum)
+    var line = readLine()!.split(separator: " ").map{Float($0)!}
+    var std = line.removeFirst()
+    var average = line.reduce(0){$0 + $1} / std
+    var hiav = line.filter{ $0>average }.count
+    var result = round(1000 * Float(hiav) / std * 100) / 1000
+    var result3f = String(format: "%.3f", result)
+    print("\(result3f)%")
 }
-
-
