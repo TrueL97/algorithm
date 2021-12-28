@@ -5,27 +5,27 @@
 //  Created by 이윤식 on 2021/12/18.
 //
 
-import Foundation
-//
-//10818
+//import Foundation
+////
+////10818
 //var input = readLine()!
 //var input1 = readLine()!.split(separator: " ").map{ Int(String($0))!}
 //
 //print(input1.min()!, input1.max()!)
-
+//
 //2562
 //var arr:[Int] = []
 //for i in 0...8 {
 //    arr.append(Int(readLine()!)!)
 //}
-//for i in 1...9 {
-//    if arr[i-1] == arr.max(){
+//for i in 0...8 {
+//    if arr[i] == arr.max(){
 //        print(arr.max()!)
-//        print(i)
+//        print(i+1)
 //    }
 //}
-
-//2577
+//
+////2577
 //var input1 = Int(readLine()!)!
 //var input2 = Int(readLine()!)!
 //var input3 = Int(readLine()!)!
@@ -43,8 +43,8 @@ import Foundation
 //    var num = a.count
 //    print(num)
 //}
-
-//3052
+//
+////3052
 //var arr:[Int] = []
 //var a = 10
 //for i in 0...9 {
@@ -67,7 +67,7 @@ import Foundation
 //}
 //
 //print(set.count)
-
+//
 //1546
 //var input = Int(readLine()!)!
 //var arr = readLine()!.split(separator: " ").map{Float(String($0))!}
@@ -79,8 +79,8 @@ import Foundation
 ////    print(sum)
 //}
 //print(sum/Float(arr.count))
-
-//8958
+//
+////8958
 //var input = Int(readLine()!)!
 //for i in 1...input {
 //    var input1 = readLine()!
@@ -101,15 +101,15 @@ import Foundation
 //    print(sum)
 //}
 //
-//4344
-let input = Int(readLine()!)!
-
-for i in 1...input {
-    var line = readLine()!.split(separator: " ").map{Float($0)!}
-    var std = line.removeFirst()
-    var average = line.reduce(0){$0 + $1} / std
-    var hiav = line.filter{ $0>average }.count
-    var result = round(1000 * Float(hiav) / std * 100) / 1000
-    var result3f = String(format: "%.3f", result)
-    print("\(result3f)%")
-}
+////4344
+//let input = Int(readLine()!)!
+//
+//for i in 1...input {
+//    var line = readLine()!.split(separator: " ").map{Float($0)!}
+//    var std = line.removeFirst()
+//    var average = line.reduce(0){$0 + $1} / std
+//    var hiav = line.filter{ $0>average }.count
+//    var result = round(1000 * Float(hiav) / std * 100) / 1000
+//    var result3f = String(format: "%.3f", result)
+//    print("\(result3f)%")
+//}
