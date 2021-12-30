@@ -66,5 +66,60 @@ import Foundation
 //}
 //print("\(ja)/\(mo)")
 
+//2869
+
+////
+//let input = readLine()!.split(separator: " ").map{Int($0)!}
+//var A = input[0]
+//var B = input[1]
+//var V = input[2]
+//
+//
+//var vb = V - B // 총 올라가야하는 거리 because 정상에서는 안미끄러지기 때문
+//var ab = A - B //
+//
+//var sum = vb / ab
+//var sumd = vb % ab
+//
+//if sumd != 0 {
+//   sum = sum + 1
+//}
+//print(sum)
+
+//10250
+let input1 = Int(readLine()!)!
+
+for i in 1...input1 {
+    var Y:Int = 0
+    var X:Int = 1
+    let input2 = readLine()!.split(separator: " ").map{Int($0)}
+    var one = input2[0]!
+    var two = input2[1]!
+    var three = input2[2]!
+
+    for i in 1...three {
+        Y = Y + 1
+        if Y == one + 1 {
+            Y = 1
+            X = X + 1
+        }
+    }
+    if X < 10 {
+        print("\(Y)0\(X)")
+    }else{
+    print("\(Y)\(X)")
+}
+
+}
+
+//2775
+
+
+
+
+
+
+
+
 
 
