@@ -87,33 +87,57 @@ import Foundation
 //print(sum)
 
 //10250
-let input1 = Int(readLine()!)!
+//let input1 = Int(readLine()!)!
+//
+//for i in 1...input1 {
+//    var Y:Int = 0
+//    var X:Int = 1
+//    let input2 = readLine()!.split(separator: " ").map{Int($0)}
+//    var one = input2[0]!
+//    var two = input2[1]!
+//    var three = input2[2]!
+//
+//    for i in 1...three {
+//        Y = Y + 1
+//        if Y == one + 1 {
+//            Y = 1
+//            X = X + 1
+//        }
+//    }
+//    if X < 10 {
+//        print("\(Y)0\(X)")
+//    }else{
+//    print("\(Y)\(X)")
+//}
+//
+//}
 
-for i in 1...input1 {
-    var Y:Int = 0
-    var X:Int = 1
-    let input2 = readLine()!.split(separator: " ").map{Int($0)}
-    var one = input2[0]!
-    var two = input2[1]!
-    var three = input2[2]!
-
-    for i in 1...three {
-        Y = Y + 1
-        if Y == one + 1 {
-            Y = 1
-            X = X + 1
-        }
-    }
-    if X < 10 {
-        print("\(Y)0\(X)")
-    }else{
-    print("\(Y)\(X)")
-}
-
-}
-
+//1,2,3,4,5,6,7,8,9,10,11,12,13,14
 //2775
 
+var apt:[[Int]]  = [[1,2,3,4,5,6,7,8,9,10,11,12,13,14],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+// var apt:[[Int]]  = Array(repeating:Array(repeating: 1, count: 15), count: 15)
+
+for i in 0...13{ //층
+    for j in 0...13 { //호수
+        var sum = 0
+        for k in 0...j {
+            sum = sum + apt[i][k]
+//            print(k)
+        }
+
+        apt[i+1].append(sum)
+    }
+//    print(apt[i])
+}
+
+let input = Int(readLine()!)!
+for i in 1...input {
+    let k = Int(readLine()!)!
+    let n = Int(readLine()!)!
+    
+    print(apt[k][n-1])
+}
 
 
 
