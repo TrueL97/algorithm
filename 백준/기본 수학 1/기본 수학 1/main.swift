@@ -112,36 +112,71 @@ import Foundation
 //
 //}
 
-//1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
 //2775
 
-var apt:[[Int]]  = [[1,2,3,4,5,6,7,8,9,10,11,12,13,14],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-// var apt:[[Int]]  = Array(repeating:Array(repeating: 1, count: 15), count: 15)
+//var apt:[[Int]]  = [[1,2,3,4,5,6,7,8,9,10,11,12,13,14],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+//// var apt:[[Int]]  = Array(repeating:Array(repeating: 1, count: 15), count: 15)
+//
+//for i in 0...13{ //층
+//    for j in 0...13 { //호수
+//        var sum = 0
+//        for k in 0...j {
+//            sum = sum + apt[i][k]
+////            print(k)
+//        }
+//
+//        apt[i+1].append(sum)
+//    }
+////    print(apt[i])
+//}
+//
+//let input = Int(readLine()!)!
+//for i in 1...input {
+//    let k = Int(readLine()!)!
+//    let n = Int(readLine()!)!
+//
+//    print(apt[k][n-1])
+//}
 
-for i in 0...13{ //층
-    for j in 0...13 { //호수
-        var sum = 0
-        for k in 0...j {
-            sum = sum + apt[i][k]
-//            print(k)
-        }
-
-        apt[i+1].append(sum)
-    }
-//    print(apt[i])
-}
-
-let input = Int(readLine()!)!
-for i in 1...input {
-    let k = Int(readLine()!)!
-    let n = Int(readLine()!)!
-    
-    print(apt[k][n-1])
-}
-
-
-
-
+//2839
+//let input = Int(readLine()!)!
+//
+//var X = 0
+//var i = 1
+//while i <  1666{
+//    //최소수
+//    if input % 5 == 0 {
+//        print(input / 5)
+//        break
+//    }
+//
+//    //5, 3 합쳐서 3을 i에 곱해준 이유는 그래야 5로 나눠줘서 봉지 최소 개수가 되기 때문
+//    //3으로만 나눠지면 input -3 * i 가 0이 딱 되면 그게 3의 봉지수
+//    if (input - 3 * i) % 5  == 0 {
+//        X = (input - 3 * i) / 5
+//        print("\(i + X)")
+//        break
+//    }
+//
+//    //3으로도 안나눠지면 나눠지는게 없음
+//    if (input - 3 * i) < 0 {
+//        print(-1)
+//        break
+//    }
+//    i = i + 1
+//}
+//
+//
+////if input % 5 == 0 {
+////    print(input  / 5)
+////}else if (input % 5) % 3 == 0 {
+////    print(X + Y)
+////}else if input % 3 == 0 {
+////    print(input / 3)
+////}else {
+////    print("-1")
+////}
 
 
 
