@@ -179,57 +179,72 @@ import Foundation
 ////}
 
 //10757
-let input = readLine()!.split(separator: " ")
+//let input = readLine()!.split(separator: " ")
+//
+//var input1 = input[0]
+//var input2 = input[1]
+//var arr1:[Int] = []
+//var arr2:[Int] = []
+//var result:[Int] = []
+//for i in input1.reversed() {
+//    arr1.append(Int(String(i))!)
+//}
+//
+//for i in input2.reversed() {
+//    arr2.append(Int(String(i))!)
+//}
+//
+//if input1.count > input2.count {
+//    for i in 1...input1.count - input2.count{
+//    arr2.append(0)
+//    }
+//    arr1.append(0)
+//    arr2.append(0)
+//}else if input2.count > input1.count {
+//    for i in 1...input2.count - input1.count{
+//    arr1.append(0)
+//    }
+//    arr1.append(0)
+//    arr2.append(0)
+//}else {
+//    arr1.append(0)
+//    arr2.append(0)
+//}
+//
+//for i in 0...arr1.count - 1 {
+//    if arr1[i] + arr2[i] > 9 {
+//        arr1[i+1] += 1
+//        var sum = arr1[i] + arr2[i] - 10
+//        result.append(sum)
+//
+//    }else {
+//        var sum = arr1[i] + arr2[i]
+//        result.append(sum)
+//    }
+//}
+//
+//if result.last == 0 {
+//    result.removeLast()
+//}
+//var res = result.reversed().reduce(""){ $0 + String($1) }
+//
+//print(res)
 
-var input1 = input[0]
-var input2 = input[1]
-var arr1:[Int] = []
-var arr2:[Int] = []
-var result:[Int] = []
-for i in input1.reversed() {
-    arr1.append(Int(String(i))!)
-}
-
-for i in input2.reversed() {
-    arr2.append(Int(String(i))!)
-}
-
-if input1.count > input2.count {
-    for i in 1...input1.count - input2.count{
-    arr2.append(0)
-    }
-    arr1.append(0)
-    arr2.append(0)
-}else if input2.count > input1.count {
-    for i in 1...input2.count - input1.count{
-    arr1.append(0)
-    }
-    arr1.append(0)
-    arr2.append(0)
-}else {
-    arr1.append(0)
-    arr2.append(0)
-}
-
-for i in 0...arr1.count - 1 {
-    if arr1[i] + arr2[i] > 9 {
-        arr1[i+1] += 1
-        var sum = arr1[i] + arr2[i] - 10
-        result.append(sum)
-        
+//1011
+let input1 = Int(readLine()!)!
+var k = 0
+for i in 1...input1 {
+    let input2 = readLine()!.split(separator: " ").map{ Int($0)!}
+    var dis = input2[1] - input2[0]
+    var sqrt = sqrt(Double(dis))
+    var count = 0
+    if Int(sqrt) < Int(ceil(sqrt)) {
+        count = Int(sqrt * 2) //제곱근이 정수로 안나눠 떨어질때 6의 제곱근 * 2 = 4.8, 7의 제곱근 * 2 = 5.2
     }else {
-        var sum = arr1[i] + arr2[i]
-        result.append(sum)
+        count = Int(sqrt * 2 ) - 1 //제곱근이 정수일때
     }
+    print(count)
 }
-
-if result.last == 0 {
-    result.removeLast()
-}
-var res = result.reversed().reduce(""){ $0 + String($1) }
-
-print(res)
-
 
 
 
