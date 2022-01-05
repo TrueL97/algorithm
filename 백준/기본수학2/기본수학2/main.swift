@@ -73,3 +73,98 @@ import Foundation
 //
 //print(result)
 
+//2581
+//let input1 = Int(readLine()!)!
+//let input2 = Int(readLine()!)!
+//
+//var arr:[Int] = []
+//
+//for i in input1...input2 {
+//    var a = false
+//    if i == 1 {
+//        continue
+//    }
+//
+////    if i == 2 {
+////        arr.append(2)
+////        continue
+////    }
+//    for j in 2..<i {
+//        if i % j == 0 {
+//            a = true
+//            break
+//        }
+//    }
+////        print(i, a)
+//    if a == false {
+//        arr.append(i)
+//
+//    }
+//
+//}
+//
+//if arr.count == 0 {
+//    print("-1")
+//}else {
+//    var sum = arr.reduce(0) {$0 + $1}
+////    print(arr)
+//    print(sum)
+//    print(arr.first!)
+//}
+
+//11653
+var result = Int(readLine()!)!
+
+var i = 2
+while true {
+    if result == 1 {
+        break
+    }
+
+    if result % i != 0 {
+        i = i + 1
+    }else {
+        //i로 나눠질때
+        print(i)
+        result = result / i
+        if result == 1 {
+            break
+        }
+    }
+
+}
+//---------------------------
+//var N = Int(String(readLine()!))!
+//
+//var result = ""
+//var i = 2
+//var stop = 1
+//mmm()
+//
+//func mmm() {
+//    if N == 1 {
+//        return
+//    }else if N == 2 {
+//        print("2")
+//        return
+//    }
+//    while N != 1 {
+//
+//            if N % i == 0 {
+//                recursiveN()
+//            }else {
+//                i = i + 1
+//            }
+//
+//    }
+//    print("\(result)")
+//}
+//
+//func recursiveN () {
+//    N = N / i
+//    result += "\(i)\n"
+//
+//
+//}
+
+
