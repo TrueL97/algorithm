@@ -246,50 +246,134 @@ import Foundation
 //}
 
 //9020
-var sosu:Set<Int> = []
-for i in 2...10000{
-sosu.insert(i)
-}
-var number = 2
-var count = 2
-while true {
-let one = number * count
-sosu.remove(one)
-count = count + 1
+//var sosu:Set<Int> = []
+//for i in 2...10000{
+//sosu.insert(i)
+//}
+//var number = 2
+//var count = 2
+//while true {
+//let one = number * count
+//sosu.remove(one)
+//count = count + 1
+//
+//    if one > 10000 {
+//number = number + 1
+//count = 2
+//}
+//if number > 5000 {
+//break
+//}
+//}
+//
+//
+//let input = Int(readLine()!)!
+//for _ in 1...input{
+//    let input2 = Int(readLine()!)!
+//    var arr = [Int]()
+//    var arr2 = [String]()
+//
+//    for i in 2...input2 {
+//        if sosu.contains(i) {
+//            arr.append(i)
+//        }
+//    }
+//
+//    if arr.contains(input2 / 2){
+//        print("\(input2 / 2) \(input2 / 2)")
+//    }else {
+//        for j in 0...arr.count-1 {
+//            for k in j...arr.count - 1 {
+//                if arr[j] + arr[k] == input2 {
+//                    arr2.append("\(arr[j]) \(arr[k])")
+//                }
+//            }
+//        }
+//        print(arr2.last!)
+//    }
+//
+//}
 
-    if one > 10000 {
-number = number + 1
-count = 2
-}
-if number > 5000 {
-break
-}
-}
+//1085
+//let input = readLine()!.split(separator: " ").map{ Int($0)!}
+//
+////x, y는 사각형 안에 있다
+//let x = input[0]
+//let y = input[1]
+//
+//let w = input[2]
+//let h = input[3]
+//
+//var wx = w - x
+//var hy = h - y
+//
+//var arr:[Int] = []
+//arr.append(wx)
+//arr.append(hy)
+//arr.append(x)
+//arr.append(y)
+//print(arr.min()!)
+
+//3009
+//var x:[Int] = []
+//var y:[Int] = []
+//for _ in 1...3{
+//let input = readLine()!.split(separator: " ").map{Int($0)!}
+//    x.append(input[0])
+//    y.append(input[1])
+//}
+//var xresult = 0
+//var yresult = 0
+//if x[0] == x[1] {
+//    xresult = x[2]
+//}else if x[0] == x[2]{
+//    xresult = x[1]
+//}else{
+//    xresult = x[0]
+//}
+//
+//if y[0] == y[1] {
+//    yresult = y[2]
+//}else if y[0] == y[2]{
+//    yresult = y[1]
+//}else{
+//    yresult = y[0]
+//}
+//print("\(xresult) \(yresult)")
 
 
-let input = Int(readLine()!)!
-for _ in 1...input{
-    let input2 = Int(readLine()!)!
-    var arr = [Int]()
-    var arr2 = [String]()
-    
-    for i in 2...input2 {
-        if sosu.contains(i) {
-            arr.append(i)
-        }
-    }
-    
-    if arr.contains(input2 / 2){
-        print("\(input2 / 2) \(input2 / 2)")
-    }else {
-        for j in 0...arr.count-1 {
-            for k in j...arr.count - 1 {
-                if arr[j] + arr[k] == input2 {
-                    arr2.append("\(arr[j]) \(arr[k])")
-                }
-            }
-        }
-        print(arr2.last!)
-    }
 
-}
+
+//4153
+//while true {
+//    let input = readLine()!.split(separator: " ").map{Int($0)!}
+//    let one = input[0]
+//    let two = input[1]
+//    let three = input[2]
+//    if one == 0 && two == 0 && three == 0 {
+//        break
+//    }
+//    var arr:[Int] = []
+//    arr.append(one)
+//    arr.append(two)
+//    arr.append(three)
+//    arr.sort{$0<$1}
+//
+//    if arr[0] * arr[0] + arr[1] * arr[1] == arr[2] * arr[2]{
+//        print("right")
+//    }else {
+//        print("wrong")
+//    }
+//
+//}
+//
+
+
+
+
+
+
+
+
+
+
