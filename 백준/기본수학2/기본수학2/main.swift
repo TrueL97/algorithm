@@ -342,8 +342,6 @@ import Foundation
 //print("\(xresult) \(yresult)")
 
 
-
-
 //4153
 //while true {
 //    let input = readLine()!.split(separator: " ").map{Int($0)!}
@@ -368,7 +366,56 @@ import Foundation
 //}
 //
 
+//3053
+//let input = Double(readLine()!)!
+//
+//let round1:Double = 1000000
+//let a = round(input * input * Double.pi * round1) / round1
+//let b = input * 2 * input
+//print(a)
+//print(b)
 
+//1002
+
+let input = Int(readLine()!)!
+for _ in 1...input {
+    let input1 = readLine()!.split(separator: " ").map{ Double($0)!}
+    let x1 = input1[0]
+    let y1 = input1[1]
+    let r1 = input1[2]
+    
+    let x2 = input1[3]
+    let y2 = input1[4]
+    let r2 = input1[5]
+    
+    //터렛 사이 거리
+    let r3 = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2))
+   
+    //터렛이 같은위치에 있고 마린 거리가 다를 때
+    if r3 == 0 && r1 != r2{
+        print("0")
+    } // 둘사이 거리가 r1 + r2 보다 클 떄
+    else if r3 > r1 + r2 {
+        print("0")
+    }
+    //터렛이 같은 위치에 있고 마린 거리가 같을때
+    else if r3 == 0 && r1 == r2{
+        print("-1")
+        
+    }//터렛 사이에 마린 있을떄
+    else if r1 + r2 == r3{
+        print("1")
+    }
+    else if abs(r1 - r2) == r3 {
+        print("1")
+    }
+    else if abs(r1 - r2) < r3 && abs(r1 + r2) > r3{
+        print("2")
+    }else {
+        print("0")
+    }
+
+}
 
 
 
