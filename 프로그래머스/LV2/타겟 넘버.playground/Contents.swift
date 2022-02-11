@@ -24,5 +24,6 @@ func solution(_ numbers:[Int], _ target:Int) -> Int {
     return arr1
 }
 
-let a = solution([1,1,1,1,1], 3)
+let a = solution([1,1,1,1,1], 3)]
+
 print(a)
